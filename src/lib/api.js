@@ -97,7 +97,7 @@ export async function fetchConversationDetail(conversationId) {
 
 // ─── Audio ───
 
-const PROXY_AUDIO_URL = 'http://localhost:3001/api/audio';
+const PROXY_AUDIO_URL = '/api/audio';
 
 export function getConversationAudioUrl(conversationId) {
   return `${PROXY_AUDIO_URL}/${conversationId}`;
@@ -131,7 +131,7 @@ export async function removeTagFromConversation(conversationId, tagId) {
 
 // ─── Classification via OpenAI (through local proxy) ───
 
-const PROXY_URL = 'http://localhost:3001';
+const PROXY_URL = '';
 
 /**
  * Classify a transcript and generate a concise summary.
